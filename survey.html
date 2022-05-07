@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+          font-size: calibri;
+          line-height: 1.4;
+          background-color: azure;
+          width: 500px;
+          margin: auto;
+         
+         }
+   
+         form {
+           background-color: rgb(red, green, rgb(48, 37, 153));
+           padding: 2.5rem 2.5rem;
+           border-radius: 2rem;
+           width: 500px;
+           margin: auto;
+         }
+   
+         .submit-button{
+           width: 100%;
+           padding: 0.75rem;
+           background: red;
+           border-radius: 2px;
+           color: white;
+           cursor: pointer;
+         }
+   
+       </style>
+     </head>
+     <body>
+       <h1 id="title">Tesla model purchase</h1>
+   
+       <p id="description">Fill details to complete your tesla order</p>
+   
+       <form id="survey-form">
+   
+         <div class="input_headings">
+   
+         <label for="Name" id="name-label">name</label>
+         <input id="name" type="text" name="name" placeholder="Elon musk"
+         required> </input>
+          <br>
+   
+         <label for="email" id="email-label"> email </label>
+         <input id="email" type="email" name="name" placeholder="elonmusk@gmail.com" required> </input>
+         <br>
+   
+         <label for="number" id="number-label">Age</label>
+         <input id="number" type="number" name="number" placeholder="18" min="18" max="100" required></input>
+          <br>
+   
+          <label for="dropdown" id="model">select model</label>
+          <select id="dropdown">
+            <option value="model 3">model 3</option>  
+            <option value="model s">model s</option>  
+            <option value="model y">model y</option>  
+            <option value="model x">model x</option>  
+            <option value="model b">model b</option>  
+          </select>
+          <br>
+          <br>
+   
+          <label for="model_color" id="model_color"><b>model color: </b></label>
+           <br>
+   
+          <input id="model_color" type="radio" id="name" name="color" value="black">
+          <label id="model_color"> black</label>
+          <br>
+          
+          <input id="model_color" type="radio" id="name" name="color" value="white">
+          <label id="model_color"> white</label>
+          <br>
+   
+          <input id="model_color" type="radio" id="name" name="color" value="red">
+          <label id="model_color"> red</label>
+          <br>
+          <br>
+   
+          <label for="features"><b> Add features</b></label>
+          <br>
+   
+          <input id="checkbox" type="checkbox" name="features" value="autopiolt">
+          <label for="checkbox"> full self driving (autopilot) - $10,000</label>
+          <br>
+   
+          <input id="checkbox" type="checkbox" name="features" value="dual_motor">
+          <label for="checkbox"> dual motor (all wheel drive) - $9,000</label>
+          <br>
+   
+          <input id="checkbox" type="checkbox" name="features" value="battery">
+          <label for="checkbox"> performance plus (inhanced battery) - $7,000</label>
+          <br>
+          <br>
+   
+          <label id="textarea"> Additional comments</label>
+          <br>
+          <textarea id="textarea" name="instructions" rows="5" cols="40"></textarea>
+          <br>
+          
+   
+          <input id="submit" type="submit" value="place order" class="submit-button">
+   
+          </div>    
+   
+       </form>
+   
+     
+   
+   
+</body>
+</html>
